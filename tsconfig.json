@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "useDefineForClassFields": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": ["src/*"],
+            "@pages/*": ["src/pages/*"],
+            "@assets/*": ["src/assets/*"],
+            "@components/*": ["src/components/*"],
+            "@layouts/*": ["src/layouts/*"],
+            "@store/*": ["src/store/*"],
+            "@views/*": ["src/views/*"],
+            "@configs/*": ["src/configs/*"],
+            "@utility/*": ["src/utility/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@utils/*": ["src/utility/Utils/*"],
+            "@styles/*": ["src/assets/scss/*"],
+            "@navigations/*": ["src/navigations/*"],
+            "@Provider/*": ["src/Provider/*"],
+            "@router/*": ["src/router/*"],
+            "@common/*": ["src/common/*"],
+            "@i18n/*": ["src/i18n/*"],
+            "@helpers/*": ["src/helpers/*"],
+            "@view/*": ["src/view/*"]
+        }
+    },
+    "include": ["src"]
+}

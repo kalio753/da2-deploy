@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .title-container {
+        h1 {
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-size: 36px;
+        }
+
+        div {
+            color: #eeeeee;
+            font-size: 18px;
+        }
+
+        .inputs {
+            margin: auto;
+            color: #896eff;
+            cursor: pointer;
+            text-decoration: underline;
+            align-items: center;
+            display: inline-flex;
+            transition:
+                0.3s cubic-bezier(0.25, 0.8, 0.5, 1),
+                color 1ms;
+        }
+
+        .inputs:focus,
+        .inputs:hover {
+            position: relative;
+            background: rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    .app-container {
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+
+        .image-selector-container {
+            .select-box,
+            img {
+                width: 360px;
+            }
+
+            .css-1nmdiq5-menu {
+                z-index: 100;
+            }
+
+            .img-container {
+                position: relative;
+
+                img {
+                    z-index: 99;
+                    width: 360px;
+                    height: 224px;
+                    object-fit: cover;
+                }
+
+                canvas {
+                    height: 224px;
+                    width: 224px;
+                    object-fit: cover;
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                }
+
+                img,
+                canvas {
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+
+        .result-container {
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 260px;
+
+            .progress-item {
+                color: #ffffff;
+                text-align: left;
+                .progress-bar {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    color: #eeeeee;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    div {
+        margin-bottom: 6px;
+    }
+}

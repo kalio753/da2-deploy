@@ -10,13 +10,10 @@ export async function runModel(
 ): Promise<[Tensor, number]> {
     const start = new Date()
     try {
-        console.log(model)
         const outputData = await model.run([preprocessedData])
         const end = new Date()
         const inferenceTime = end.getTime() - start.getTime()
         const output = outputData.values().next().value
-        console.log(output)
-
         return [output, inferenceTime]
     } catch (e) {
         console.error(e)
